@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="style .css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="./style.sheet/comparison.css">
+<link href="https://fonts.googleapis.com/css2?family=Almendra:ital@1&family=Condiment&family=Dancing+Script:wght@400;500;600;700&family=Montserrat&family=Poppins:wght@600&family=Seaweed+Script&family=Source+Sans+Pro:ital,wght@1,600&family=Supermercado+One&family=Syne+Tactile&family=Ubuntu:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+
+<title>compare page</title>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body style=" background-color: black;">
+    <header data-aos="fade-down" data-aos-duration="2000">
+        <div class="logoImg">
+            <img src="Images/Ourlogo-removebg-preview.png" alt="">
+        </div>
+        <ul class="hover-underline-animation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li class="menu">
+                <a href="Shop.html">Shop</a>
+                <ul class="dropdown">
+                    <li><a href="">Leo Brand</a></li>
+                    <li><a href="">Throne Brand</a></li>
+                    <li><a href="">New Brand</a></li>
+                </ul>
+            </li>
+            <li><a href="#AboutUs">About us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+       <i class="fas fa-search"></i>
+    </header>
+    <div class="container">
+        <h1 data-aos="fade-up" style="text-align: center; text-transform: uppercase; font-family: sans-serif;margin-top: 200px; color: white; " class="razi">compare </h1>
+        <div class="row my-5">
+            <div class="col-lg-6">
+
+                    <div class="form-group">
+                            <label class="text-white fs-2 justify-content-center text-uppercase">Prodcut One</label>
+                            <select class="form-select" id="op1" onChange="item_one()">
+        
+                                <option>Select Any utensils</option>
+                                <option>metal fry pen</option>
+                                <option>metal spoon</option>
+                                <option>metal cookware</option>
+                            </select>
+                    </div>
+
+
+                    <div class="form-group my-3">
+                                                
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img src="image/sec.jpg" id="img1" class="img-fluid">
+                                <div class="card-title text-center text-dark">
+                                    <h4 class="my-4" id="m1"></h4>
+                                    <h4 class="my-4" id="p1"></h4>
+                                    <button class="btn btn-outline-dark w-50">BuyNow</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+        
+            </div>
+        
+            <div class="col-lg-6"> 
+                <div class="form-group">
+                    <label class="text-white fs-2 justify-content-center text-uppercase">Prodcut two</label>
+                    <select class="form-select" id="op2" onChange="item_two()">
+
+                        <option>Select Any utensils</option>
+                        <option>metal fry pen</option>
+                        <option>metal spoon</option>
+                        <option>metal cookware</option>
+                    </select>
+            </div>
+
+
+            <div class="form-group my-3">
+                                        
+                <div class="card">
+                    <div class="card-body text-center">
+                        <img src="image/sec.jpg" id="img2" class="img-fluid">
+                        <div class="card-title text-center text-dark">
+                            <h4 class="my-4" id="m2"></h4>
+                            <h4 class="my-4" id="p2"></h4>
+                            <button class="btn btn-outline-dark w-50">BuyNow</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+
+
+
+
+        
+            </div>
+            <hr style="background-color: beige; margin-top:50px;">
+    <div class="row my-5 container-fluid">
+      <div class="col-4" style="border-right: 2px solid black;">
+          <p style="background-color: rgba(7, 6, 6, 0.788);" class="text-center text-uppercase text-light my-5 display-5">talk to us freely</p>
+          <center><button type="button" class="btn btn-outline-light my-5 px-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Start Up</button></center>  
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">wellcome</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                          <label class="navbar-brand">Name</label><br>
+                          <input required type="text" class="my-1 mx-3"><br>
+                          <label class="navbar-brand">Email</label><br>
+                          <input required type="email" class="my-1 mx-3"><br>
+                          <label class="navbar-brand">Messege</label><br>
+                          <textarea class="mx-3" rows="4"></textarea>
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-outline-dark">Save changes</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-4" style="border-right: 2px solid black;">
+          <p style="background-color: rgba(0, 0, 0, 0.788);" class="text-center text-light my-5 display-5">Link</p>
+          <ul>
+              <li class="aa nav-item"><a class="aa ab mx-1 nav-link" href="home.html"><i class="fas fa-home"></i> <b>Home</b></a></li>
+              <li class="aa nav-item"><a class="aa ab mx-1 nav-link" href="about.html"><i class="fas fa-address-card"></i> <b>About Us</b></a></li>
+              <li class="aa nav-item"><a class="aa ab mx-1 nav-link" href="contact.html"><i class="fas fa-phone-square-alt"></i> <b>Contect Us</b></a></li>
+              <li class="aa nav-item"><a class="aa ab mx-1 nav-link" href=""><i class="far fa-envelope"></i> <b>Email</b></a></li>
+          </ul>
+      </div>
+      <div class="col-4">
+          <p style="background-color: rgba(0, 0, 0, 0.788); color: white;" class="text-center text-light my-5 display-5">Follow </p>
+          <ul>
+              <li class="aa nav-item"><a class="aa ab mx-1 nav-link" href=""><i class="ac fab fa-facebook"></i> <b>FACEBOOK</b></a></li>
+              <li class="aa nav-item"><a class="aa ab mx-1 nav-link" href=""><i class="fab fa-instagram"></i> <b>INSTAGRAM</b></a></li>
+              <li class="aa nav-item"><a class="aa ab mx-1 nav-link" href=""><i class="fab fa-twitter"></i> <b>TWITTER</b></a></li>
+              <li class="aa nav-item"><a class="aa ab mx-1 nav-link" href=""><i class="fab fa-linkedin"></i> <b>LINKEDIN</b></a></li>
+          </ul>
+      </div>
+  </div>
+    
+        </body>
+        
+        </html>
+        
+        
+   
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({duration:3000});
+      </script>
+
+
+
+
+
+
+
+
+<img src="" alt="">
+<script>
+        
+    function item_one() {
+        var option_one = document.querySelector('#op1').selectedIndex;
+        var option_two = document.querySelector('#op2').selectedIndex;
+
+        if(option_one==option_two)
+        {
+
+            swal({
+                title: "Sorry",
+                text: "Select another product Same Product do not Compare.!",
+                icon: "warning",
+                dangerMode: true,
+                })
+            // alert("Sorry Same Product do not Compare.");
+            document.querySelector('#img1').src = "image/sec.jpg";
+            document.querySelector('#m1').innerHTML= "";
+            document.querySelector('#p1').innerHTML= "";
+
+            
+        }
+            
+       
+        if (option_one == 1) {
+
+            document.querySelector('#img1').src = "image/me.jpg";
+            document.querySelector('#m1').innerHTML= "sonex none stick fry pen";
+            document.querySelector('#p1').innerHTML= "fry pen Price is 799/-";
+            
+        }
+        if (option_one == 2) {
+
+            document.querySelector('#img1').src = "image/met.jpg";
+            document.querySelector('#m1').innerHTML= "stainless steel table spoon 6 pic";
+            document.querySelector('#p1').innerHTML= "spoon Price is 800/-";
+            
+        }
+        if (option_one == 3) {
+
+            document.querySelector('#img1').src = "image/metal.jpg";
+            document.querySelector('#m1').innerHTML= "metal cookware complete set";
+            document.querySelector('#p1').innerHTML= "metal cookware Price is 2000/-";
+            
+        }
+
+    }
+
+
+    function item_two() {
+        var option_one = document.querySelector('#op1').selectedIndex;
+        var option_two = document.querySelector('#op2').selectedIndex;
+       
+        if(option_one==option_two)
+        {
+            
+            swal({
+                title: "Sorry",
+                text: "Select another product Same Product do not Compare.!",
+                icon: "warning",
+                dangerMode: true,
+                })
+            // alert("Sorry Same Product do not Compare.");
+            document.querySelector('#img2').src = "image/sec.jpg";
+            document.querySelector('#m2').innerHTML= "";
+            document.querySelector('#p2').innerHTML= "";
+
+        }
+        
+            
+        if (option_two == 1) {
+
+            document.querySelector('#img2').src = "image/fry pan.jpg";
+            document.querySelector('#m2').innerHTML="sonex none stick fry pen";
+            document.querySelector('#p2').innerHTML= "fry pen Price is 799/-";
+            
+        }
+        if (option_two == 2) {
+
+            document.querySelector('#img2').src= "image/most sp.jpg";
+            document.querySelector('#m2').innerHTML= "stainless steel table spoon 6 pic";
+            document.querySelector('#p2').innerHTML="spoon Price is 800/-";
+            
+        }
+        if (option_two == 3) {
+
+            document.querySelector('#img2').src="image/alumi.jpg";
+            document.querySelector('#m2').innerHTML="metal cookware complete set";
+            document.querySelector('#p2').innerHTML="metal cookware Price is 2000/-";
+            
+        }
+
+    }
+
+    
+
+    // //  function item_two() {
+    //     var option_one = document.getElementById('op1').selectedIndex;
+    //     var option_two = document.getElementById('op2').selectedIndex; 
+    //     if (option_two == 1) {
+
+    //         document.querySelector('#img2').src = "image/al.jpg";
+    //         document.querySelector('#m2').value = "almunium deep fry pen ";
+    //         document.querySelector('#p2').value = " fry pen Price is 1650/-";
+            
+    //     }
+
+    //     if (option_two == 2) {
+
+    //         document.querySelector('#img2').src = "image/alum.jpg";
+    //         document.querySelector('#m2').value = "desert spoon 6pic";
+    //         document.querySelector('#p2').value = "spoon Price is 580/-";
+    //     }
+
+        
+
+    //     if (option_two == 3) {
+
+    //         document.querySelector('#img2').src = "image/alumi.jpg";
+    //         document.querySelector('#m2').value = "baby bell pot set 3pic";
+    //         document.querySelector('#p2').value = "cookware Price is 1,127/-";
+    //     }
+
+    // }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
